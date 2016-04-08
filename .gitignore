@@ -1,0 +1,11 @@
+
+.DS_Store
+target/
+lib_managed/
+src_managed/
+project/boot/
+.history
+.cache
+.idea
+
+
