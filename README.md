@@ -3,14 +3,12 @@ This project provides an SBT 0.13 plugin for running PMD over source files. For 
 
 This plugin uses version 5.1.3 of PMD.
 
-## Setup ##
+### Setup ###
 Add the following lines to `project/plugins.sbt`:
 
 ```scala
 addSbtPlugin("com.qonceptual.sbt" % "sbt-pmd-plugin" % "1.0.2")
 ```
-
-## Usage ##
 
 ### Running PMD ###
 `sbt pmd`
