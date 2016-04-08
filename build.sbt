@@ -2,7 +2,7 @@ import bintray.Keys._
 
 name := "sbt-pmd-plugin"
 
-version := "1.0.0"
+version := "1.0.2"
 
 organization := "com.qonceptual.sbt"
 
@@ -23,7 +23,6 @@ bintrayOrganization in bintray := Some("qonceptual")
 vcsUrl in bintray := Some("https://github.com/qonceptual/sbt-pmd-plugin.git")
 
 libraryDependencies ++= Seq(
-  "net.sourceforge.pmd" % "pmd-core" % "5.4.1",
-  "net.sourceforge.pmd" % "pmd-java" % "5.4.1"
+  "net.sourceforge.pmd" % "pmd" % "5.1.3"
 )
 

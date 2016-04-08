@@ -9,6 +9,8 @@ import scala.io.Source
  */
 object PmdPlugin extends AutoPlugin {
 
+  override def trigger: PluginTrigger = allRequirements
+
   object autoImport {
 
     val pmdReportFormat = settingKey[String]("The PMD Report format output. Supported values that also successfully " +
@@ -24,7 +26,7 @@ object PmdPlugin extends AutoPlugin {
 
   import autoImport._
 
-  override def projectSettings = Seq(
+  override lazy val projectSettings = Seq(
     pmdReportFormat := "text",
     pmdRulesets := Seq("rulesets/java/basic.xml"),
     pmdLanguage := "java",
