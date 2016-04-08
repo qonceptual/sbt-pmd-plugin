@@ -11,7 +11,9 @@ addSbtPlugin("com.qonceptual.sbt" % "sbt-pmd-plugin" % "1.0.2")
 ```
 
 ### Running PMD ###
-`sbt pmd`
+```scala
+sbt pmd
+```
 
 ### Configuring PMD to Run Before Tests ###
 ```scala
