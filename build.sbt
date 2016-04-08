@@ -20,6 +20,7 @@ repository in bintray := "sbt-plugins"
 
 bintrayOrganization in bintray := Some("qonceptual")
 
+vcsUrl in bintray := Some("https://github.com/qonceptual/sbt-pmd-plugin.git")
 
 libraryDependencies ++= Seq(
   "net.sourceforge.pmd" % "pmd-core" % "5.4.1",
